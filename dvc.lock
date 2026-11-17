@@ -1,0 +1,33 @@
+schema: '2.0'
+stages:
+  entrenar:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 
+      notebooks/Taller_MLOps_Calidad_Vino_ISO42001.ipynb
+    deps:
+    - path: data/raw/winequality-red.csv
+      hash: md5
+      md5: 6a883fd98624e18c0b7ce251f4fab4fb
+      size: 100951
+    - path: notebooks/Taller_MLOps_Calidad_Vino_ISO42001.ipynb
+      hash: md5
+      md5: 37f36c1a78f659044658dac6dabe71aa
+      size: 563144
+    params:
+      params.yaml:
+        taller:
+          random_state: 100
+          test_size: 0.2
+          umbral_calidad: 6.5
+          eliminar_duplicados: true
+          pca_components: 4
+          cv_folds: 10
+          experimento_mlflow: vino-calidad-iso42001
+    outs:
+    - path: governance/evidencia_modelo_vino.json
+      hash: md5
+      md5: a18218cc92d8e398053579b4420bf0ba
+      size: 1584
+    - path: models/modelo_vino.joblib
+      hash: md5
+      md5: 829833dded51e9455b4d9df0fe68a9dd
+      size: 826002
