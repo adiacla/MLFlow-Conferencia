@@ -2,16 +2,16 @@ schema: '2.0'
 stages:
   entrenar:
     cmd: jupyter nbconvert --to notebook --execute --inplace 
-      notebooks/Taller_MLOps_Calidad_Vino_ISO42001.ipynb
+      notebooks/TalleV2r_MLOps_Calidad_Vino_ISO42001.ipynb
     deps:
     - path: data/raw/winequality-red.csv
       hash: md5
       md5: 6a883fd98624e18c0b7ce251f4fab4fb
       size: 100951
-    - path: notebooks/Taller_MLOps_Calidad_Vino_ISO42001.ipynb
+    - path: notebooks/TalleV2r_MLOps_Calidad_Vino_ISO42001.ipynb
       hash: md5
-      md5: 8e2525eef44d38fd5d2d5a8ff8fd3deb
-      size: 562549
+      md5: 4f190a363da9faf4d06a9bd0b0de173f
+      size: 579177
     params:
       params.yaml:
         taller:
@@ -25,9 +25,9 @@ stages:
     outs:
     - path: governance/evidencia_modelo_vino.json
       hash: md5
-      md5: 82a6db9cb96cac9c60a87862f8e9b563
-      size: 1584
+      md5: 5f1f4aaf7d0abffcd63069ed09801257
+      size: 1585
     - path: models/modelo_vino.joblib
       hash: md5
-      md5: 829833dded51e9455b4d9df0fe68a9dd
-      size: 826002
+      md5: 5bae95a5a84d942db615ff8812a1d6ec
+      size: 1674642
