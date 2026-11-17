@@ -1,0 +1,8 @@
+# Entorno y artefactos locales (no se versionan en Git)
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+mlruns/
+mlflow.db
+# Datos crudos: se versionan con DVC (ver guia.md §7), no con Git
+data/raw/winequality-red.csv
