@@ -1,20 +1,20 @@
 {
-  "generado_utc": "2026-11-17T01:56:58.833988+00:00",
+  "generado_utc": "2026-11-17T03:28:39.735916+00:00",
   "datos": {
     "archivo": "winequality-red.csv",
-    "sha256": "d6a0d9bd24806944818795f22500c46cb6424cbff517aacda36595d3ed9b2daa",
+    "sha256": "b7e0f7ea223f5926ce61bcc34654f7ed4c62d9559f87e16c9bd28f772deed74d",
     "filas_originales": 1599,
-    "duplicados_eliminados": 0,
-    "filas_usadas": 1599
+    "duplicados_eliminados": 240,
+    "filas_usadas": 1359
   },
   "parametros": {
     "random_state": 100,
     "test_size": 0.2,
     "umbral_calidad": 6.5,
-    "eliminar_duplicados": false,
+    "eliminar_duplicados": true,
     "pca_components": 4,
     "cv_folds": 10,
-    "experimento_mlflow": "vino-calidad-iso42001"
+    "experimento_mlflow": "vino-calidad-iso42001V2"
   },
   "mejor_modelo": {
     "tipo": "RandomForestClassifier + StandardScaler + PCA",
@@ -22,17 +22,17 @@
       "clf__bootstrap": true,
       "clf__criterion": "gini",
       "clf__max_depth": null,
-      "clf__min_samples_leaf": 1,
+      "clf__min_samples_leaf": 5,
       "clf__min_samples_split": 2
     },
-    "exactitud_validacion_cruzada": 0.9085
+    "exactitud_validacion_cruzada": 0.8822
   },
   "metricas_prueba": {
-    "accuracy": 0.8781,
-    "precision": 0.5769,
-    "recall": 0.3488,
-    "f1": 0.4348,
-    "roc_auc": 0.87
+    "accuracy": 0.864,
+    "precision": 0.5,
+    "recall": 0.2162,
+    "f1": 0.3019,
+    "roc_auc": 0.8245
   },
   "entorno": {
     "python": "3.14.4",
@@ -41,7 +41,7 @@
     "scikit-learn": "1.9.1",
     "mlflow": "3.18.0"
   },
-  "mlflow_run_final": "9d1a0721db7c41c7b8d6b30e535e6a2b",
+  "mlflow_run_final": "ba3f81e874184583a44dffb65b661e35",
   "controles_de_referencia": [
     "Trazabilidad de datos (identificador y huella del conjunto usado)",
     "Registro de parámetros, versiones y resultados de cada experimento",

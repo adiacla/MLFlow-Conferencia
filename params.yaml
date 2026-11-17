@@ -3,7 +3,7 @@ taller:
   random_state: 100
   test_size: 0.20
   umbral_calidad: 6.5          # calidad > 6.5 => "bueno" (1)
-  eliminar_duplicados: false    # v1 con duplicados -> v2 sin duplicados
+  eliminar_duplicados: True    # v1 con duplicados -> v2 sin duplicados
   pca_components: 4
   cv_folds: 10
-  experimento_mlflow: vino-calidad-iso42001
+  experimento_mlflow: vino-calidad-iso42001V2
