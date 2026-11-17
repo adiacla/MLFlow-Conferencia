@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-17T00:16:10.394713+00:00",
+  "generado_utc": "2026-11-17T00:18:33.592801+00:00",
   "datos": {
     "archivo": "winequality-red.csv",
     "sha256": "d6a0d9bd24806944818795f22500c46cb6424cbff517aacda36595d3ed9b2daa",
@@ -41,7 +41,7 @@
     "scikit-learn": "1.9.1",
     "mlflow": "3.18.0"
   },
-  "mlflow_run_final": "58153292e8794b2abc572c3d58a42040",
+  "mlflow_run_final": "9dce89f345664787b2093707b593bd8c",
   "controles_de_referencia": [
     "Trazabilidad de datos (identificador y huella del conjunto usado)",
     "Registro de parámetros, versiones y resultados de cada experimento",

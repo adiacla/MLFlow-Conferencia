@@ -10,22 +10,22 @@ stages:
       size: 100951
     - path: notebooks/Taller_MLOps_Calidad_Vino_ISO42001.ipynb
       hash: md5
-      md5: 37f36c1a78f659044658dac6dabe71aa
-      size: 563144
+      md5: 8e2525eef44d38fd5d2d5a8ff8fd3deb
+      size: 562549
     params:
       params.yaml:
         taller:
           random_state: 100
           test_size: 0.2
           umbral_calidad: 6.5
-          eliminar_duplicados: true
+          eliminar_duplicados: false
           pca_components: 4
           cv_folds: 10
           experimento_mlflow: vino-calidad-iso42001
     outs:
     - path: governance/evidencia_modelo_vino.json
       hash: md5
-      md5: a18218cc92d8e398053579b4420bf0ba
+      md5: 82a6db9cb96cac9c60a87862f8e9b563
       size: 1584
     - path: models/modelo_vino.joblib
       hash: md5
